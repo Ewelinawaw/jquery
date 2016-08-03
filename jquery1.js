@@ -11,8 +11,6 @@ $(function() {
     var span = $("span");
 
     span.each(function(index, element) {
-
-        console.log(span);
         if(index % 2 == 0) {
             $(element).css('color', 'red');
         }
@@ -21,7 +19,7 @@ $(function() {
     var paragraphs = $('p');
     paragraphs.each(function(index, element) {
 
-        var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
+        var button = '<button class="btn" data-tmp="' + (index+1) + '">Click me</button>';
         $(element).append(button)
 
     });
